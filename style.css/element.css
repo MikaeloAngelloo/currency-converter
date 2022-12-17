@@ -1,0 +1,12 @@
+.body {
+    background-image: url("../images/money.jpg");
+    background-size: cover ;
+    background-position: center;
+
+    resize: both;
+    overflow: auto;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    padding: 10%;
+    margin: 0 auto;
+}
