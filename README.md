@@ -1,6 +1,6 @@
 ﻿# Welcome on my first currency-converter
 Hello everyone.
-Check out my simple currency converter. [click](https://mikaeloangelloo.github.io/currency-converter/)
+Check out my simple [currency converter.](https://mikaeloangelloo.github.io/currency-converter/)
 
 ![gif](images/animationconverter.gif)
 # Description
