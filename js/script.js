@@ -1,6 +1,4 @@
 {
-
-
 const calculateResult = (exchange, amount) => {
   const eurRate = 4.66;
 const usdRate = 4.5;
@@ -19,10 +17,12 @@ const chfRate = 4.74;
   }
 };
 
+const updateResultText = (amount, result, exchange) => { 
+  resultElement.innerText = `${amount} PLN = ${result.toFixed(2)} ${exchange}`;
+}
 const onFormSubmit =  (event) => {
   event.preventDefault();
 
- 
 const amountElement = document.querySelector(".js-amount");
 const exchangeElement = document.querySelector(".js-exchange");
 const resultElement = document.querySelector(".js-result");
@@ -33,6 +33,8 @@ const resultElement = document.querySelector(".js-result");
   
   const result = amount / exchangeRate;
   resultElement.innerText = `${amount} PLN = ${result.toFixed(2)} ${exchange}`;
+
+  updateResultText(amount, result, exchange);
 };
  const init = () => {
   const formElement = document.querySelector(".js-form");
